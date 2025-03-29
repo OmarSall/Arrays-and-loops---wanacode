@@ -14,7 +14,7 @@ console.log(vegetables.pop());
 // print all elements of the vegetables  array to the console using 
 // the for loop
 
-const vegetabless = ['Carrot', 'Tomato', 'Cabbage'];
+const vegetabless = ["Carrot", "Tomato", "Cabbage"];
 
 let i = 0;
 while (i < vegetabless.length) {
@@ -33,8 +33,8 @@ for (i = 0; i < vegetabless.length; i++) {
 // index notation.
 // example: thingsInHome[0]  holds the "mint" string.
 
-const thingsInHome = ['mint', 'basil', 'cactus', 'table', 'wooden spoon', 'bread'];
-const thingsInGarden = ['apple', 'trees', 'wooden stairs', 'plum', 'wooden bench'];
+const thingsInHome = ["mint", "basil", "cactus", "table", "wooden spoon", "bread"];
+const thingsInGarden = ["apple", "trees", "wooden stairs", "plum", "wooden bench"];
 
 const madeOutOfWood = [thingsInHome[4], thingsInGarden[2], thingsInGarden[4]]; // wooden spoon, wooden stairs, wooden bench
 const edibles = [thingsInHome[0], thingsInHome[1], thingsInHome[5], thingsInGarden[0], thingsInGarden[3]]; // mint, basil, bread, apple, plum
@@ -67,10 +67,10 @@ function getSmallestNumberForLoop(numbersArray) {
 // sort() version
 
 function getSmallestNumberSortVersion(numbersArray) {
-    return numbersArray.sort((a,b) => a - b)[0];
+    return numbersArray.sort((a, b) => a - b)[0];
 }
 
-console.log(getSmallestNumber([2, -5, 10, 1, 4])); // -5\
+console.log(getSmallestNumberSortVersion([2, -5, 10, 1, 4])); // -5\
 
 // 3. Write the getSquaredNumbers function
 // don't modify the array passed as an argument
@@ -335,7 +335,7 @@ console.log(digitize(0));     // [0]
 
 function findNeedle(haystack) {
     const index = haystack.indexOf("needle");
-    return index !== -1 ? `found the needle at position ${index}`: "needle not found";
+    return index !== -1 ? `found the needle at position ${index}` : "needle not found";
 }
 
 console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])); 
@@ -387,7 +387,7 @@ function arraysSum(arr1, arr2) {
     return sum1 + sum2;
 }
 
-console.log(arraySum([1, 2, 3], [4, 5, 6])); // Output: 21
+console.log(arraysSum([1, 2, 3], [4, 5, 6])); // Output: 21
 
 // create the getArraySum function that sums the elements of a 
 // single array and use it in the arrayPlusArray function
