@@ -2,12 +2,12 @@
 const fruits = ["Apple", "Banana","Mango"];
 
 // Exercise: print the last element in the vegetables  array to the console
-const vegetables = ['Carrot', 'Tomato', 'Cabbage'];
+const vegetables = ["Carrot", "Tomato", "Cabbage"];
 console.log(vegetables.pop());
 
 // Exercises:
 
-// const vegetables = ['Carrot', 'Tomato', 'Cabbage'];
+// const vegetables = ["Carrot", "Tomato", "Cabbage"];
 // print all elements of the vegetables  array to the console using 
 // the while loop
 
@@ -39,8 +39,8 @@ const thingsInGarden = ["apple", "trees", "wooden stairs", "plum", "wooden bench
 const madeOutOfWood = [thingsInHome[4], thingsInGarden[2], thingsInGarden[4]]; // wooden spoon, wooden stairs, wooden bench
 const edibles = [thingsInHome[0], thingsInHome[1], thingsInHome[5], thingsInGarden[0], thingsInGarden[3]]; // mint, basil, bread, apple, plum
 
-console.log(madeOutOfWood); // ['wooden spoon', 'wooden stairs', 'wooden bench']
-console.log(edibles); // ['mint', 'basil', 'bread', 'apple', 'plum']
+console.log(madeOutOfWood); // ["wooden spoon", "wooden stairs", "wooden bench"]
+console.log(edibles); // ["mint", "basil", "bread", "apple", "plum"]
 
 // 2. Write the getSmallestNumber function
 
@@ -95,8 +95,8 @@ function getReversedString(string) {
     return string.split("").reverse().join("");
 }
 
-getReversedString('Hello!'); // '!olleH'
-getReversedString('Arrays'); // 'syarrA'
+getReversedString("Hello!"); // "!olleH"
+getReversedString("Arrays"); // "syarrA"
 
 // 5. Write the isPalindrome  function. Inside the isPalindrome  function, 
 // call the getReversedString  function. It should be case-insensitive and shouldn't 
@@ -112,16 +112,16 @@ function isPalindrome(string) {
     return cleanedString === getReversedString(cleanedString);
 }
 
-isPalindrome('Kayak'); // true
-isPalindrome('Racecar'); // true
-isPalindrome('Was it a cat I saw') // true
-isPalindrome('Hello!'); // false
+isPalindrome("Kayak"); // true
+isPalindrome("Racecar"); // true
+isPalindrome("Was it a cat I saw") // true
+isPalindrome("Hello!"); // false
 
 // 6. Write the countLetters function. It should return an object representing the 
 // number of letters in the given text. Ignore spaces and make sure your function 
 // is case-insensitive.
 
-// const lettersObject = countLetters('The quick brown fox jumps over the lazy dog');
+// const lettersObject = countLetters("The quick brown fox jumps over the lazy dog");
 
 // console.log(lettersObject);
 // {
@@ -154,7 +154,7 @@ isPalindrome('Hello!'); // false
 // }
 
 
-// const lettersObject = countLetters('Hello');
+// const lettersObject = countLetters("Hello");
 
 // console.log(lettersObject);
 
@@ -176,7 +176,7 @@ function countLetters(text) {
     return letterCount;
 }
     
-const lettersObject = countLetters('The quick brown fox jumps over the lazy dog');
+const lettersObject = countLetters("The quick brown fox jumps over the lazy dog");
 console.log(lettersObject);
 
 // 7. Write the getAgeDifference function that finds the difference between 
@@ -200,19 +200,19 @@ function getAgeDifference(people) {
 
 const peopleArray = [
     {
-      name: 'Adam',
+      name: "Adam",
       age: 20
     },
     {
-      name: 'Amanda',
+      name: "Amanda",
       age: 5
     },
     {
-      name: 'John',
+      name: "John",
       age: 75
     },
     {
-      name: 'Dave',
+      name: "Dave",
       age: 15
     }
   ]
